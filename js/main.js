@@ -1,6 +1,6 @@
-var fillOut = document.getElementsByTagName("submit");
+var theForm = document.getElementById("myForm");
 
-fillOut[0].addEventListener( "click", function() {
+theForm[0].addEventListener( "submit", function() {
     var newPara = document.createElement( "p" );
     newPara.innerHTML = "What a beautiful site!";
 
