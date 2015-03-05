@@ -7,3 +7,4 @@ fillOut[0].addEventListener( "click", function() {
     var theContainer = document.getElementsByTagName( "container" );
     theContainer.appendChild( newPara );
     }
+);
