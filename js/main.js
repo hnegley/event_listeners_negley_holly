@@ -4,7 +4,7 @@ toClick[0].addEventListener( "click", function() {
     var newPara = document.createElement( "p" );
     newPara.innerHTML = "Thanks for clicking me!";
 
-    var theContainer = document.getElementsByTagName( "whoa" );
+    var theContainer = document.body;
     theContainer.appendChild( newPara );
 });
 
@@ -16,7 +16,7 @@ toClick[0].addEventListener( "click", function() {
     var newPara = document.createElement( "p" );
     newPara.innerHTML = "This is the start of my second paragraph";
 
-    var theContainer = document.getElementsByTagName( "yeah" );
+    var theContainer = document.getElementById( "yeah" );
     theContainer.appendChild( newPara );
 });
 
@@ -24,11 +24,11 @@ toClick[0].addEventListener( "click", function() {
 
  var toClick = document.getElementsByTagName("p");
 
-toClick[0].addEventListener( "click", function() {
+toClick[1].addEventListener( "click", function() {
     var newPara = document.createElement( "p" );
     newPara.innerHTML = "Really? Okay.";
 
-    var theContainer = document.getElementsByTagName( "okay" );
+    var theContainer = document.getElementById( "okay" );
     theContainer.appendChild( newPara );
 });
 
