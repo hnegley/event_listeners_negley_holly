@@ -1,6 +1,7 @@
 var theForm = document.getElementById("myForm");
 
-theForm.addEventListener( "submit", function() {
+theForm.addEventListener( "submit", function(event) {
+    event.preventDefault();
     var firstName = document.getElementById( "firstname" ).value;
     var lastName = document.getElementById( "lastname" ).value;
     var email = document.getElementById( "email" ).value;
