@@ -1,10 +1,13 @@
 var theForm = document.getElementById("myForm");
 
-theForm[0].addEventListener( "submit", function() {
-    var newPara = document.createElement( "p" );
-    newPara.innerHTML = "What a beautiful site!";
+theForm.addEventListener( "submit", function() {
+    var firstName = document.getElementById( "firstname" ).value;
+    var lastName = document.getElementById( "lastname" ).value;
+    var email = document.getElementById( "email" ).value;
+    var message = document.getElementById( "message" ).value;
 
-    var theContainer = document.getElementsByTagName( "container" );
-    theContainer.appendChild( newPara );
-    }
-);
+    console.log( 'The first name is: ' + firstName );
+    console.log( 'The last name is: ' + lastName );
+    console.log( 'The email is: ' + email );
+    console.log( 'The message is: ' + message );
+});
